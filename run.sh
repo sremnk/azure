@@ -9,7 +9,7 @@ location='australiaeast'
 # Authenticate using service principal on CI: https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal
 echo 'Login to Azure'
 az login
-# az account set --subscription $1
+az account set --subscription $1
 
 # Create resource group
 # echo 'Creating resource group'
@@ -17,4 +17,4 @@ az login
 
 # Run playbook
 echo 'Executing playbook'
-ansible-playbook deploy.yaml -e resourceGroup=$1 -e env=$2 --check -vvv
+ansible-playbook deploy.yaml 
