@@ -1,3 +1,3 @@
 arm:
   serverfarms_appservice_name: "dev_appservice"
-  resource_group_name: "mani"
+  resource_group_name: "john"
